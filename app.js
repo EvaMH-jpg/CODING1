@@ -61,25 +61,17 @@ app.get('/imdb', function(req, res){ //this is important for your localhost
         if(!error) {
             var $ = cheerio.load(html);
             var data = [];
-            
-            $('.lister-list').filter(function(){
+             $('.lister-list').filter(function(){
             $(this).find('tr').each(function(i, elem){
             data[i] = "'" + $(this).find('.posterColumn').find('img').attr('src') + "'";   
             });    
             });
-            
             res.send(data);
-            
-            fs.writeFile('imdb-output.js', 'var imdb_list = ['+ data +']' , function(){
-            console.log('File written on hard drive');    
-                
+             fs.writeFile('imdb-output.js', 'var imdb_list = ['+ data +']' , function(){
+            console.log('File written on hard drive');         
             });
-            
-        }
-        
-        
-        
-        });
+            }
+         });
         });
     
     

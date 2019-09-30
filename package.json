@@ -4,7 +4,7 @@
     "homepage": "",
     "description": "",
     "author": "",
-    "main": "app.js",
+    "main": "app.js",//needs to have another file with the same name then 
     "dependencies": {
         "nodemon": "latest",
         "express": "latest",

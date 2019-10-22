@@ -8,6 +8,13 @@
         
         
         <script type="text/javascript" src="data/instagram_output.js"></script>
+<!--        <script type="text/javascript" src="data/instagram_output_MONDAY.js"></script>-->
+<!--
+
+        i can make files here like copy this and put the same name /thursday etc 
+        and then with function load() i load all the different files i have 
+so 
+-->
         <script type="text/javascript" >
             function load() {
                 const div = document.getElementById('data');
@@ -17,6 +24,25 @@
                 }
             }
         </script>
+        
+        
+<!--
+        <script type="text/javascript" >
+            function load(1) {
+                const div = document.getElementById('data');
+                for(let i = 0; i < instagram_output.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+            }
+        </script>
+        
+        
+        
+        
+-->
+        
+        
         <style>
             #data {
                 display: flex;
@@ -32,22 +58,20 @@
         </style>
 
     </head>
-    <body onload="load()">
-        <div id="data"></div>
-        </body>
-    
     
     
     
     <body>
     
+
+        
+        <body onload="load()">
+        <div id="data"></div>
+        </body>
     
-    <div class="gutmensch">
-<img src="images/gutmensch.jpg">
-</div>
     
-    
-    
+        
+        
     
     </body>
 </html>

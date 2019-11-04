@@ -111,7 +111,7 @@ var app = express();
 app.get('/instagram', function(req, res){ //this one is really important because this is inside node and as soon as we say in terminal launch this code it will appear, so here we say as soon as somebody goes to this localhost it will appear and the user will see the data 
 
   // try any hashtags and see the results, make sure to write INSIDE the quotation marks
-  var hashtag = 'Gutmensch';
+  var hashtag = 'wutbürger';
   var url = 'https://instagram.com/explore/tags/'+ hashtag +'/?__a=1';
 
   // let's make the http request to the url above using the 'request' dependency
@@ -130,7 +130,7 @@ app.get('/instagram', function(req, res){ //this one is really important because
       res.send(instagram_data);
 
       // save the data we've stored in our object on our machine
-      fs.writeFile('./data/instagram_output_WEDNESDAY.js', 'var instagram_output = ' + instagram_data, function(err){
+      fs.writeFile('./data/instagram_output_WUTBÜRGER_SUNDAY.js', 'var instagram_output = ' + instagram_data, function(err){
         console.log('File is written successfully!');
       });
 

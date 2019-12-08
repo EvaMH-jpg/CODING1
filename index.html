@@ -4,11 +4,20 @@
         
         
          <link href="index.css" rel="stylesheet" />
-                <script type="text/javascript" src="data/instagram_output.js"></script>
+<!--
+                <script type="text/javascript" src="data/instagram_output_SUNDAY.js"></script>
         <script type="text/javascript" src="data/instagram_output_MONDAY.js"></script>
-        <script type="text/javascript" src="data/instagram_output_WEDNESDAY.js"></script>
-        <script type="text/javascript" src="data/instagram_output_SUNDAY.js"></script>
-      <script type="text/javascript" src="data/instagram_output_WUTBÜRGER_SUNDAY.js"></script>
+        <script type="text/javascript" src="data/instagram_output_gutmenschmonday.js"></script>
+        <script type="text/javascript" src="data/instagram_output_gutmenschmondaynovember.js"></script>
+        <script type="text/javascript" src="data/instagram_output_gutmennsch.js"></script>
+-->
+<!--
+        <script type="text/javascript" src="data/instagram_output_gutmenschh.js"></script>
+        <script type="text/javascript" src="data/instagram_output_Wutbuergersunday.js"></script>
+        <script type="text/javascript" src="data/instagram_output_wutbuergermondays.js"></script>
+        <script type="text/javascript" src="data/instagram_output_wutburgerr.js"></script>
+        <script type="text/javascript" src="data/instagram_output_wutburgeer.js"></script>
+-->
 
                 <style>
             #data {
@@ -23,30 +32,64 @@
                 margin: 10px;
             }
         </style>
-        
-        <!--          <script type="text/javascript" src="datan/instagram_output.js"></script>-->
-<!--
 
-        i can make files here like copy this and put the same name /thursday etc 
-        and then with function load() i load all the different files i have 
-so 
--->
         <script type="text/javascript" >
-            // SUNDAY DATA
             function load() {
                 const div = document.getElementById('data');
+                
                 for(let i = 0; i < instagram_output_sunday.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
                     img = "<img class='tile' src='"+instagram_output_sunday.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
                     div.innerHTML = div.innerHTML + img;
                 }
                 
-                for(let i = 0; i < instagram_output_wednesday.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
-                    img = "<img class='tile' src='"+instagram_output_wednesday.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                for(let i = 0; i < instagram_output_monday.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_monday.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
                     div.innerHTML = div.innerHTML + img;
                 }
                 
-                for(let i = 0; i < instagram_output_monday.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
-                    img = "<img class='tile' src='"+instagram_output_monday.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                for(let i = 0; i < instagram_output_gutmenschmonday.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_gutmenschmonday.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+                
+                
+                 for(let i = 0; i < instagram_output_gutmenschmondaynovember.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_gutmenschmondaynovember.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+                
+                
+                
+                for(let i = 0; i < instagram_output_gutmennsch.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_gutmennsch.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+                
+                
+                for(let i = 0; i < instagram_output_gutmenschh.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_gutmenschh.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+                
+                
+                for(let i = 0; i < instagram_output_Wutbuergersunday.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_Wutbuergersunday.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+               
+                
+                for(let i = 0; i < instagram_output_wutbuergermondays.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_wutbuergermondays.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+                
+                 for(let i = 0; i < instagram_output_wutburgerr.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_wutburgerr.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+                
+                for(let i = 0; i < instagram_output_wutburgeer.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
+                    img = "<img class='tile' src='"+instagram_output_wutburgeer.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
                     div.innerHTML = div.innerHTML + img;
                 }
                 
@@ -60,9 +103,28 @@ so
     <body onload="load()">
     
         
+
         
         
         
+         <div class="Gutmensch"> 
+         <a class="gutmensch-hover" href="index.html">
+               Gut·mensch
+             </a>
+             <img class="showImage" src="images/textneu1.png" />
+         </div>
+        
+ <div class="smalltext">/ ˈgu:tmƐnʃ,Gútmensch/</div>
+        
+        
+        
+        
+<audio id="audio1" src="images/wutbuerger1.mp3"></audio>
+
+         <a href="#" id="play1">
+    <img src="images/lautsprecher.png" width=100px height=100px class="shake-slow shake-    
+constant">
+</a>
         
 
         
@@ -70,45 +132,255 @@ so
         
         
         
+         <div class="Wutbürger"> 
+              <a class="wutbürger-hover" href="index.html">
+               Wut·bür·ger
+             </a>
+             <img class="showImage1" src="images/textneu2.png" />
+         </div>
+        
+    <div class="smalltext1">/ Wútbürger/</div>
+        
+        
+        
+        
+        
+<audio id="audio" src="images/gutmensch1.mp3"></audio>
+
+<a href="#" id="play">
+    <img src="images/lautsprecher.png" width=100px height=100px class="shake-slow shake-    
+constant">
+</a>
+        
+        
+        
+
+        
+        
+          
+<div class="headline"> 
+        <img src="images/headline.png">
+        </div>
         
         
         
         
 
-   
-    
-    
-    
-    <div class="Gutmenschbeschreibung">
-    
-    Gutmensch ist eine Bezeichnung, die häufig als ironisch, sarkastisch, gehässig oder verachtend gemeinte Verunglimpfung von Einzelpersonen, Gruppen oder Milieus („Gutmenschentum“) genutzt wird. Diesen wird aus Sicht der Wortverwender ein übertriebener, äußere Anerkennung heischender Wunsch des „Gut-sein“-Wollens in Verbindung mit einem moralisierenden und missionierenden Verhalten und einer dogmatischen, absoluten, andere Ansichten nicht zulassenden Vorstellung des Guten unterstellt. In der politischen Rhetorik wird „Gutmensch“ als Kampfbegriff verwendet.
-    
-    </div>
-    
-    
-<!--
-    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-        <audio id="player" autoplay loop>
-    <source src="images/gutmensch.mp3" type="audio/mp3">
-</audio>
+          <div class="square"> 
+      <img src="images/wutb%C3%BCrger1.png" width=73px height=73px > 
+        </div>
         
--->
+        <div class="square1"> 
+      <img src="images/gutmensch1.png" width=73px height=73px > 
+        </div>
         
         
-    <audio controls autoplay>
-  <source src="images/gutmensch.mp3" type="audio/ogg">
-  <source src="images/gutmensch.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-    
-    
 
+        
+        <div class="square-green"> 
+      <img src="images/drei.png" width=481px height=602px > 
+        </div>
+        
+        
+        
+         <div class="square-green2"> 
+    <img src="images/eins.png" width=1000px height=583px > 
+        </div>
+
+        <div class="square-green2_2"> 
+    <img src="images/kommentar.png" width=349px height=222px > 
+        </div>
+        
+        <div class="square-green2_3"> 
+    <img src="images/kommentar2.png" width=237px height=178px > 
+        </div>
+        
+        <div class="square-green3"> 
+    <img src="images/text3.png" width=709px height=1300px > 
+        </div>
+        
+         <div class="square-green4"> 
+    <img src="images/text8.png" width=591px height=237px > 
+        </div>
+        
+        
+        <div class="square-green5"> 
+    <img src="images/text5.png" width=709px height=615px > 
+        </div>
+        
+        
+        <div class="square-green6"> 
+    <img src="images/vier.png" width=850px height=1134px > 
+        </div>
+        
+        <div class="square-green7"> 
+    <img src="images/five.png" width=650px height=650px > 
+        </div>
+        
+        
+        <div class="square-green8"> 
+    <img src="images/six.png" width=709px height=652px > 
+        </div>
+        
+        
+        
+        <div class="square-green9"> 
+    <img src="images/seven.png" width=850px height=520px > 
+        </div>
+        
+        
+        
+        <div class="square-green10"> 
+    <img src="images/eight.png" width=721px height=432px > 
+        </div>
+        
+        
+         
+        <div class="square-green11"> 
+    <img src="images/kommentar1.png" width=352px height=194px > 
+        </div>
+        
+        <div class="square-green12"> 
+    <img src="images/nine.png" width=630px height=432px > 
+        </div>
+        
+        <div class="square-green13"> 
+    <img src="images/ten.png" width=643px height=458px > 
+        </div>
+        
+        <div class="square-green14"> 
+    <img src="images/eleven.png" width=515px height=458px > 
+        </div>
+        
+        <div class="square-green15"> 
+    <img src="images/twelve.png" width=700px height=521px > 
+        </div>
+        
+        
+        <div class="square-green16"> 
+    <img src="images/thirteen.png" width=465px height=462px > 
+        </div>
+        
+        
+        <div class="square-green17"> 
+    <img src="images/fourteen.png" width=419px height=396px > 
+        </div>
+        
+        
+        <div class="square-green18"> 
+    <img src="images/1.png" width=137px height=137px > 
+        </div>
+        
+        
+         <div class="square-green19"> 
+    <img src="images/2.png" width=207px height=207px > 
+        </div>
+        
+        
+          <div class="square-green20"> 
+    <img src="images/3.png" width=207px height=207px > 
+        </div>
+        
+        
+          <div class="square-green22"> 
+    <img src="images/fifteen.png" width=782px height=782px > 
+        </div>
+        
+         <div class="square-green23"> 
+    <img src="images/kommentar3.png" width=473px height=119px > 
+        </div>
+        
+        
+        <div class="square-green24"> 
+    <img src="images/kommentar4.png" width=473px height=119px > 
+        </div>
+        
+        
+         <div class="square-green25"> 
+    <img src="images/kommentar5.png" width=473px height=119px > 
+        </div>
+        
+        
+         <div class="square-green26"> 
+    <img src="images/sixteen.png" width=473px height=473px > 
+        </div>
+        
+        <div class="square-green27"> 
+    <img src="images/4.png" width=154px height=178px > 
+        </div>
+        
+        <div class="longtext"> 
+    <img src="images/longtext1.png" width=709px height=2363px > 
+        </div>
+        
+          
+        <div class="longtext2"> 
+    <img src="images/longtext2.png" width=709px height=2363px > 
+        </div>
+        
+        
+            
+        <div class="text6"> 
+    <img src="images/text6.png" width=709px height=709px > 
+        </div>
+        
+        
+        <div class="text7"> 
+    <img src="images/text7.png" width=591px height=591px > 
+        </div>
+        
+ 
+        
+         <div class="smalltextimage"> 
+    <img src="images/smalltextimage.png" width=945px height=591px > 
+        </div>
+        
+        
+        
+         <div class="conclusion"> 
+    <img src="images/conclusion.png" width=945px height=178px > 
+        </div>
+        
+        
+       
         
         <div id="data"></div>
-    
-    
         
         
+              <script>  
+                  document.getElementById('play1').addEventListener('click', function (e) {
+                      e.preventDefault();
+                      document.getElementById('audio1').play();
+                  });
+                  
+                  var element = document.querySelector(".gutmensch-hover");
+                  element.addEventListener("mouseover", function(){
+                      document.querySelector(".showImage").style.display = "block";
+                  });
+                  element.addEventListener("mouseout", function(){
+                      document.querySelector(".showImage").style.display = "none";
+                  });
+                 
+                  document.getElementById('play').addEventListener('click', function (e) {
+                      e.preventDefault();
+                      document.getElementById('audio').play();
+                  });
+                  var element = document.querySelector(".wutbürger-hover");
+                  element.addEventListener("mouseover", function(){
+                      document.querySelector(".showImage1").style.display = "block";
+                  });
+                  element.addEventListener("mouseout", function(){
+                      document.querySelector(".showImage1").style.display = "none";
+                  });
+
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+<!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+-->
+<script src="script.js"></script>
     
     </body>
 </html>

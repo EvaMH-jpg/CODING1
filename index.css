@@ -4,11 +4,6 @@
 
 
 body, html {
-    
-    height: 9000px;
-/*    background-color: black;*/
-    width: 100%;
-    
     }
 
 
@@ -34,11 +29,11 @@ body, html {
 
 
 .smalltext{
-     margin-top: 25%;
+     margin-top: 12%;
     position:absolute;
     font-family: Helvetica Neue;
     font-size: 30px;
-   margin-left: 20%;
+   margin-left: 17%;
     color:grey;
     
     }
@@ -64,7 +59,7 @@ body, html {
 
 
 .smalltext1{
-     margin-top: 25%;
+     margin-top: 12%;
     position:absolute;
     font-family: Helvetica Neue;
     font-size: 30px;
@@ -76,7 +71,7 @@ body, html {
 
 
 #play{
-     position:absolute;
+    position:absolute;
     margin-top: 14.5%;
     margin-left:7%;
     width:100px; 
@@ -88,7 +83,7 @@ body, html {
 
 
 #play1{
-     position:absolute;
+    position:absolute;
     margin-top: 14.5%;
     margin-left: 52%;
     width:100px; 
@@ -98,20 +93,479 @@ body, html {
 
 
 #data{
+    position: absolute;
+    margin-top: 60%;
+    }
+
+
+
+.showImage {
+    display: none;
+    margin-top: -3%;
+    margin-left: -4%;
+}
+
+
+.showImage1 {
+    display: none;
+    margin-top: -3%;
+    margin-left: -4%;
+}
+
+
+
+.square {
+    position: absolute;
+    left: 800px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top:-6%;
+    /* the green one is all in the back */
+    z-index: 2;
+}
+
+
+.square1{
+    position: absolute;
+    left: 300px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
     margin-top: 10%;
+    /* the green one is all in the back */
+    z-index: 2;
+}
+
+.square-green {
+    position: absolute;
+    left: 300px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top:5600px;
+    /* the green one is all in the back */
+    z-index: 2;
+}
+
+
+
+.headline{
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 15%;
+     background-color:transparent;  
+    z-index: 2;
+}
+
+.square-green1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 500px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    top: 1000px;
+    /* the green one is all in the back */
+    z-index: 1;
+}
+
+
+
+.square-green2 {
+    position: absolute;
+    left: 300px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 3150px;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+}
+
+
+.square-green2_2 {
+    position: absolute;
+    left: 300px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 1900px;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+}
+
+
+
+.square-green2_3 {
+    position: absolute;
+    left: 300px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 2800px;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+}
+
+
+.square-green3 {
+    position: absolute;
+    left: 630px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 5300px;
+    /* this one shows me if its in the back or front */
+    z-index: 2;
+}
+
+
+
+
+.square-green4 {
+    position: absolute;
+    left:20px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 570%;
+    /* this one shows me if its in the back or front */
+    z-index: 2;
+}
+
+
+.square-green5 {
+    position: absolute;
+    left: 430px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 750%;
+    /* this one shows me if its in the back or front */
+    z-index: 5;
+}
+
+
+.square-green6 {
+    position: absolute;
+    left: 400px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 500%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+}
+
+
+.square-green8 {
+    position: absolute;
+    left: 100px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 900%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+}
+
+.square-green7 {
+    position: absolute;
+    left: 100px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 300%;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+}
+
+
+.square-green8 {
+    position: absolute;
+    left: 80px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 6800px;
+    /* this one shows me if its in the back or front */
+    z-index: 3;
+}
+
+
+.square-green9 {
+    position: absolute;
+    left: 100px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 9000px;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+}
+
+
+.square-green10{
+    position: absolute;
+    left: 250px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 7900px;
+    /* this one shows me if its in the back or front */
+    z-index: 2;
+    }
+
+.square-green11{
+    position: absolute;
+    left: 900px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 100%;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
     }
 
 
-.Gutmenschbeschreibung{
- margin-top: 20%;
-margin-left: 30%;
-    margin-right:30%;
-    position:absolute;
-font-family: Nazare;
-    font-size: 30px;
-    color:white;
-    background-color: black;
+
+.square-green12{
+    position: absolute;
+    left: 700px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 860%;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+    }
+
+
+.square-green13{
+    position: absolute;
+    left: 700px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 820%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+    }
+
+
+.square-green14{
+    position: absolute;
+    left: 680px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 800%;
+    /* this one shows me if its in the back or front */
+    z-index: 2;
+    }
+
+.square-green15{
+    position: absolute;
+    left: 50px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 600%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+    }
+
+
+.square-green16{
+    position: absolute;
+    left: 62px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 630%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+    }
+
+
+.square-green17{
+    position: absolute;
+    left: 60px;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 550%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
     }
 
 
 
+.square-green18{
+    position: absolute;
+    left: 43%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 1%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+    }
+
+
+
+.square-green19{
+    position: absolute;
+    left: 10%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: -15%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+    }
+
+
+
+
+.square-green20{
+    position: absolute;
+    left: 10%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 260%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+    }
+
+.square-green21{
+    position: absolute;
+    left: 10%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 560%;
+    /* this one shows me if its in the back or front */
+    z-index: 4;
+    }
+
+
+.square-green22{
+    position: absolute;
+    left: 10%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 700%;
+    /* this one shows me if its in the back or front */
+    z-index: 4;
+    }
+
+
+.square-green23{
+    position: absolute;
+    left: 110%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 700%;
+    /* this one shows me if its in the back or front */
+    z-index: 4;
+    }
+
+
+.square-green24{
+    position: absolute;
+    left: 30%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 250%;
+    /* this one shows me if its in the back or front */
+    z-index: 5;
+    }
+
+
+.square-green25{
+    position: absolute;
+    left: 60%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 380%;
+    /* this one shows me if its in the back or front */
+    z-index: 5;
+    }
+
+
+.square-green26{
+    position: absolute;
+    left: 50%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 355%;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+    }
+
+
+.square-green27{
+    position: absolute;
+    left: 50%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 930%;
+    /* this one shows me if its in the back or front */
+    z-index: 0;
+    }
+
+
+.longtext{
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 70%;
+}
+
+.longtext2{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 60%;
+}
+
+.smalltextimage{
+    position: absolute;
+    left: 20%;
+    background-color:transparent;  
+    
+    /* make sure it starts outside of the screen */
+    margin-top: 180%;
+    /* this one shows me if its in the back or front */
+    z-index: 1;
+    }
+
+.text6{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 280%;
+}
+    
+    
+.text7{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 680%;
+    
+}
+
+
+
+.conclusion{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 1100%;
+    }

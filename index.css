@@ -519,7 +519,7 @@ body, html {
     background-color:transparent;  
     
     /* make sure it starts outside of the screen */
-    margin-top: 930%;
+    margin-top: 932%;
     /* this one shows me if its in the back or front */
     z-index: 0;
     }

@@ -569,3 +569,37 @@ body, html {
     margin-left: 15%;
     margin-top: 1100%;
     }
+
+
+.content2{
+    
+    font-family: Adobe Jenson;
+    font-size: 45px;
+    color:blue;
+    position:absolute;
+    margin-top: 865.5%;
+    margin-left: 21%;
+   -webkit-user-select: none;
+    }
+
+
+
+#d { 
+ background-image: url(images/end1.png);
+   top:1565%;
+    width:1450px;
+    height:1340px;
+    position:absolute;
+        
+}
+
+
+.conclusion1{
+    position: absolute;
+   top: 1550%;
+    left: 40%;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    
+    
+}

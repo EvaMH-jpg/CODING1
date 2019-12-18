@@ -53,11 +53,36 @@ $(window).on("scroll",function(e){
 });
 
 
-var controller = new ScrollMagic.Controller();
+var el2 = document.getElementById('d');
+var ctx2 = el2.getContext('2d');
+var isDrawing2;
+
+el2.onmousedown = function(e) {
+  isDrawing2 = true;
+  ctx2.lineWidth = 90;
+ctx2.strokeStyle="white";
+  ctx2.lineJoin = ctx2.lineCap = 'round';
+  ctx2.moveTo(e.offsetX, e.offsetY);
+};
+el2.onmousemove = function(e) {
+  if (isDrawing2) {
+    ctx2.lineTo(e.offsetX, e.offsetY);
+    ctx2.stroke();
+  }
+};
+el2.onmouseup = function() {
+  isDrawing2 = false;
+};
+
+
+
+
+
+/*var controller = new ScrollMagic.Controller();
 
 $(function () { 
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 300})
 						.setPin("#pin1")
 						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);
-	});
+	});*/
